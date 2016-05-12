@@ -2,8 +2,6 @@
 from tkinter import *
 import winsound
 import random
-import time
-import sys
 
 #Implementing sounds
 walk_sound_list = ["sounds/grass1.wav","sounds/grass2.wav","sounds/grass3.wav","sounds/grass4.wav","sounds/grass5.wav","sounds/grass6.wav"]
