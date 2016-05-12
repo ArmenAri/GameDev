@@ -41,8 +41,6 @@ World = []
 world_size_x = WIDTH // scale
 world_size_y = HEIGHT // scale
 
-
-
 #Booleans
 gameOver = False
 savana_biome = False
@@ -150,7 +148,6 @@ def addNewItem(item, rarity):
 #Addin new items in list of items
 addNewItem(key, "rare")
 addNewItem(apple, "common")
-
 
 #Called when the prog. choose a random item
 def chooseAnItem():
@@ -414,8 +411,7 @@ def LoadGraphics():
                 canvas.create_image(x0+17, y0+17, image = barrel_)
             if World[x][y] == axe_in_the_log:
                 canvas.create_image(x0+17, y0+17, image = axe_in_the_log_)
-
-    
+                
     info()
     towerCollision()
     chestCollision()
@@ -647,7 +643,6 @@ for x in range(world_size_x):
             World[x-2][y+2] = tree
             World[x-2][y-2] = tree
             
-
 #Called when player is in front of tower
 def towerCollision():
     global World, inventory, key
